@@ -1,0 +1,27 @@
+{
+    "name": "LUCKYAN",
+    "short_name": "Lckyan",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_color": "#db4938",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "MEDIA/LUCKYAN_icon.png",
+        "type": "image/png", "sizes": "72x72"
+      },
+      {
+        "src": "MEDIA/LUCKYAN_icon.png",
+        "type": "image/png", "sizes": "96x96"
+      },
+      {
+        "src": "MEDIA/LUCKYAN_icon.png",
+        "type": "image/png","sizes": "128x128"
+      },
+      {
+        "src": "MEDIA/LUCKYAN_icon.png",
+        "type": "image/png", "sizes": "144x144"
+      }
+    ]
+  }

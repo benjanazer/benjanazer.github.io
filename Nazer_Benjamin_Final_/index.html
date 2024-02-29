@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Nazer-benjamin-Final</title>
+    <meta name="theme-color" content="#3498db">
+
+    <link rel="icon" type="image/png" href="MEDIA/LUCKYAN_icon.png">
+    <link rel="serviceworker" href="serviceworker.js">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="MEDIA/LUCKYAN_icon.png" />
+    <link rel="apple-touch-icon" href="MEDIA/LUCKYAN_icon.png" />
+    <link rel="apple-touch-icon" href="MEDIA/LUCKYAN_icon.png" />
+    <link rel="apple-touch-icon" href="MEDIA/LUCKYAN_icon.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+    <meta name="theme-color" content="#db4938" />
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css ">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="overlay"></div>
+  <section id="formulario" class="formulario-container">
+    <div class="formulario">
+        <h1>Iniciar sesión</h1>
+        <form method="post">
+            <div class="username">
+                <input type="text" required>
+                <label>nombre de usuario</label>
+            </div>
+            <div class="username">
+                <input type="password" required>
+                <label>contraseña</label>
+            </div>
+            <div class="recordar">¿olvidó su contraseña?</div>
+            <input type="submit" value="iniciar">
+            <div class="registrarse">
+                ¿no tienes una cuenta? <a href="#">registrate</a>
+            </div>
+            <button id="ingresar-como-invitado-btn">Ingresar como invitado</button>
+            <p>(ingresa como invitado)</p>
+        </form>
+    </div>
+  </section>
+     <header>
+        <div class="container">
+            <img class="logo" src="MEDIA/LUCKYAN_LOGO.png" alt="LUCKYAN">
+            <nav>
+                <a href="#hero">INICIO</a>
+                <a href="#nuevas">TENDENCIAS</a>
+                <a href="#descubre">MARCAS</a>
+                <a href="#favoritos">FAVORITOS</a>
+                <a href="#perfil">PERFIL</a>
+            </nav> 
+        </div>   
+     </header>
+
+  <section id="hero">
+        <h1>Tu armario virtual <br>con estilo y personalidad</br></h1>
+        <a href="#nuevas">BIENVENIDO A LUCKYAN</a>
+  </section>
+
+  <section id="nuevas" class="container">
+      <h2>NEVAS TENDENCIAS</h2>
+       <div id="carta1" class="card mb-4">
+          <div class="row g-0">
+              <div class="col-md-4">
+                  <img src="MEDIA/andy_hero.png" class="img-fluid rounded-start" alt="andy">
+              </div>
+              <div class="col-md-8">
+                  <div class="card-body">
+                      <h1 class="card-title">CAMISAS "BOXY"</h1>
+                      <p class="card-text">El "boxy fit" es un estilo suelto y cuadrado que no se ajusta al cuerpo. Tiene una silueta más amplia y recta, esto le da un aspecto informal y moderno. Se encuentra prendas como remeras,camisas y buzos.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 30 mins ago</small></p>
+                      <button class="like-btn" onclick="duplicateAndMoveToFavorite('carta1')">AGREGAR A FAVORITOS</button>
+                  </div>
+              </div>
+          </div>
+       </div>
+       <div id="carta2" class="card mb-4">
+          <div class="row g-0">
+              <div class="col-md-8">
+                  <div class="card-body">
+                      <h1 class="card-title">NEVOS ACCESORIOS</h1>
+                      <p class="card-text">accesorios básicos que han estado en tendencia recientemente <br>Gorras "new era", anillos con diseños geométricos, Gafas de sol de estilo retro </br></p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 30 mins ago</small></p>
+                      <button class="like-btn" onclick="duplicateAndMoveToFavorite('carta2')">AGREGAR A FAVORITOS</button>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <img src="MEDIA/accesorios.png" class="img-fluid rounded-start" alt="accesorios">
+              </div>
+          </div>
+          
+       </div>
+  </section>
+
+  <section id="descubre" class="container">
+      <h2 class="text-center">DESCUBRE MARCAS</h2>
+      <div class="row justify-content-center">
+          <div class="col-sm-6 col-md-3 mb-4">
+              <div id="marca1" class="card">
+                  <img src="MEDIA/vans.jpg" class="card-img-top" alt="vans">
+                  <div class="card-body">
+                      <a href="https://www.vans.com.ar/" target="_blank">VANS</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-md-3 mb-4">
+              <div id="marca2" class="card">
+                  <img src="MEDIA/rotten.png" class="card-img-top" alt="ROTTEN">
+                  <div class="card-body">
+                      <a href="https://rotten-future.com/" target="_blank">ROTTEN FUTURE</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-md-3 mb-4">
+              <div id="marca3" class="card">
+                  <img src="MEDIA/KONGO.png" class="card-img-top" alt="kotk">
+                  <div class="card-body">
+                      <a href="https://kingofthekongo.com.ar/" target="_blank">KOTK</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-md-3 mb-4">
+              <div id="marca4" class="card">
+                  <img src="MEDIA/BULLBENNY.jpg.png" class="card-img-top" alt="bullbenny">
+                  <div class="card-body">
+                      <a href="https://www.bullbenny.com.ar/" target="_blank">BULLBENNY</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="influencias" class="container">
+        <h2>INFLUENCERS SOBRE MODA</h2>
+        <div id="carta" class="card mb-3">
+          <img src="MEDIA/benjaig.png" class="card-img-top" alt="benjaig">
+          <div class="card-body">
+            <h3 class="card-title">BENJA FRANCO</h3>
+            <Button> <a href="https://www.instagram.com/benjafrancoo_/">SEGUIR EN INSTAGRAM</a></Button>
+          </div>
+        </div>
+        <div id="carta" class="card">
+          <img src="MEDIA/patoig.png" class="card-img-bottom" alt="pato">
+          <div class="card-body">
+            <h3 class="card-title">PATO BONZINI</h3>
+            <Button> <a href="https://www.instagram.com/patobonzini/">SEGUIR EN INSTAGRAM</a></Button>
+          </div>
+        </div>
+
+        <div id="carta" class="card mb-3">
+          <img src="MEDIA/CARIG.png" class="card-img-top" alt="CARIG">
+          <div class="card-body">
+            <h3 class="card-title">CARLOTA MARANON</h3>
+            <Button> <a href="https://www.instagram.com/carlomaranon/">SEGUIR EN INSTAGRAM</a></Button>
+          </div>
+        </div>
+        <div id="carta" class="card">
+          <img src="MEDIA/andyig.png" class="card-img-bottom" alt="ANDY">
+          <div class="card-body">
+            <h3 class="card-title">ANDY WAAK</h3>
+            <Button> <a href="https://www.instagram.com/andywaak/">SEGUIR EN INSTAGRAM</a></Button>
+          </div>
+        </div>
+
+        <div id="carta" class="card mb-3">
+          <img src="MEDIA/felixig.png" class="card-img-top" alt="felixig">
+          <div class="card-body">
+            <h3 class="card-title">FELIX RUESS</h3>
+            <Button> <a href="https://www.instagram.com/felix.ruess/">SEGUIR EN INSTAGRAM</a></Button>
+          </div>
+        </div>
+        <div id="carta" class="card">
+          <img src="MEDIA/ariiig.png" class="card-img-bottom" alt="erii">
+          <div class="card-body">
+            <h3 class="card-title">ERIC SANCHEZ</h3>
+            <Button> <a href="https://www.instagram.com/eriicsaanchezz/">SEGUIR EN INSTAGRAM</a></Button>
+          </div>
+        </div>
+  </section>
+
+  <section id="favoritos" class="container">
+    <h2>Tus Favoritos</h2>
+  </section>
+
+  <section id="perfil" class="container">
+     <h2>MI PERFIL </h2>
+     <h3>Ingresaste como invitado, ¡Luckyan no contiene tus datos persnales!</h3>
+  </section>
+
+  <section id="contacto">
+      <form>
+          <p>contactate con LUCKYAN</p>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Nombre</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect2">Apellido</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+              <div class="col-md-12 text-center">
+                  <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+              </div>
+          </div>
+        </form>
+  </section>
+
+  <footer>
+    <div class="container">
+      <ul>
+        <li>Carrera: Diseño Multimedial</li>
+        <li>Materia: Maquetado y Desarrollo web</li>
+        <li>Curso: DMM2BV</li>
+        <li>Año: 2024</li>
+        <li>Turno: Mañana</li>
+        <li>Nombre: Nazer Benjamin</li>
+      </ul>
+      <img src="MEDIA/foto_benja.jpg" alt="foto">
+      <p>Luckyan © 2023</p>
+    </div>
+  </footer>
+ 
+
+  <script src="script.js"></script>
+  <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
